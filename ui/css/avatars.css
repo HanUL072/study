@@ -1,0 +1,80 @@
+/* 아바타 */
+body{
+  margin: 50px;
+}
+
+/* 인터랙션 없는 아바타 */
+.avatar-img{
+
+  width: 100px;
+  position: relative;
+  
+  img{
+    border-radius: 50%;
+  }
+
+  .status{
+    background: var(--gray);
+    border: 2px solid var(--white);
+    width: 25%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    bottom:2px;
+    right: 2px;
+    
+    &.is-online{
+      background: var(--green);
+    }
+  }
+}
+
+/* 인터랙션 있는 아바타 */
+.avatar-button {
+  width: 80px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  position: relative;
+
+  img{
+    border-radius: 50%;
+  }
+
+  &::after{
+    content: '';
+    width: 25%;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    background: var(--gray);
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
+
+  &.is-online::after{
+    background: var(--green);
+  }
+}
+
+/* 아바타 리스트 */
+.avatar-list{
+  border: 1px solid var(--gray);
+  padding: 26px 40px;
+  
+  ul{
+    width:380px;
+    margin: 0 auto;
+    display: flow-root;
+
+    li{
+      margin: 10px 0 10px 20px;
+      float: left;
+
+      &:nth-child(4n + 1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
