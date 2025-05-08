@@ -1,0 +1,63 @@
+body {
+  font-family: "SUIT Variable", sans-serif;
+}
+.table-1 {
+  border: 1px solid currentColor;
+
+  th,
+  td {
+    border: 1px solid currentColor;
+  }
+}
+
+/* 최강기아 */
+#bestKia {
+  color: red;
+}
+
+/* KBO 순위 기아만 색깔있게 */
+.rankKia {
+  color: red;
+}
+
+/* 팀 스토어 */
+.container1 {
+  border: 1px solid black;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.container1 > p {
+  border: inherit;
+}
+
+/* 기아 주저리글 */
+.container2 {
+  border: 2px solid red;
+  width: 20cm;
+  padding: 14px;
+  margin: 14px;
+}
+
+section::before {
+  content: "최강 기아";
+  font-weight: 800;
+  font-size: 24px;
+}
+
+section::after {
+  content: "KIA Tigers";
+  color: red;
+}
+
+/* 팀 스토어 버튼 */
+.storeKIA {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 160px;
+}
+

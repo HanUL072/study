@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 정보</title>
+    <link
+      rel="shortcut icon"
+      href="/public/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/suit/SUIT-Variable.woff2"
+    />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <style>
+      body {
+        font-family: "SUIT Variable", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+
+    <!-- 내 정보 기입창 -->
+    <div>
+      <h1>내 정보</h1>
+      <div>
+        <label for="search">이름</label>
+        <input type="text" id="search" name="search" />
+      </div>
+      <div>
+        <label for="birthday">생년월일</label>
+        <input type="text" id="birthday" name="birthday" />
+      </div>
+      <div>
+        <label for="mygoal">나의 목표</label>
+        <input type="text" id="mygoal" name="mygoal" />
+      </div>
+      <div>
+        <label for="searchKeyword">검색어</label>
+        <input
+          type="search"
+          id="searchKeyword"
+          name="keyword"
+          placeholder="검색어를 입력하세요."
+        />
+      </div>
+    </div>
+
+    <!-- 취미 선택 -->
+    <h2>취미</h2>
+    <div>
+      <input type="checkbox" value="baseball" name="hobby" id="hobbyBaseball" />
+      <label for="hobbyBook">책읽기</label>
+    </div>
+    <div>
+      <input type="checkbox" value="game" name="hobby" id="hobbyGame" />
+      <label for="hobbyGame">게임</label>
+    </div>
+    <div>
+      <input type="checkbox" value="drawing" name="hobby" id="hobbyDrawing" />
+      <label for="hobbyDrawing">그림그리기</label>
+    </div>
+
+    <!-- 성별 선택 -->
+
+    <h2>성별</h2>
+    <div>
+      <label>
+        <input type="radio" checked name="person" value="men" />남자
+      </label>
+    </div>
+    <div>
+      <label> <input type="radio" name="person" value="women" />여자 </label>
+    </div>
+
+    <!-- 하고싶은 말 -->
+
+    <h2>하고싶은 말</h2>
+    <div>
+      <label for="message"></label>
+      <textarea name="message" id="message" cols="50" rows="10"></textarea>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* CSS 변수 */
+@property --text-colr {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #f0c;
+}
+
+:root {
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+}
+
+body {
+  margin: 50px;
+  background: #ffc;
+  /* --main-color: var(--green); */
+}
+
+a {
+  /* --text-color: var(--blue); */
+  /* color: var(--text-color #f0f); */
+  color: var(--text-colr);
+
+  span {
+    /* color: var(--text-color); */
+  }
+}
+
+h1 {
+  /* color: var(--text-color); */
+}
